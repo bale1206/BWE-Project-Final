@@ -1,0 +1,272 @@
+.body-main{
+    background-color: rgb(15, 15, 15);
+}
+
+
+.navbar-main{
+    display: flex;
+    background-color: rgb(6, 6, 6);
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+}
+
+.lateral-bar{
+    display: flex;
+    margin-top: 80px;
+    /* border-right: 1px solid rgb(25, 25, 25); */
+    height: 1000px;
+    width: 300px;
+    position: fixed;
+    flex-direction: column;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.bottom-bar{
+    display: flex;
+    border-right: 1px solid rgb(25, 25, 25);
+    background-color: rgb(6, 6, 6);
+    height: 50px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    flex-direction: row;
+    text-decoration: none;
+    bottom: 0;
+    z-index: 5;
+}
+
+.lateral-bar div{
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.lateral-bar a{
+    text-decoration: none;
+    color: rgb(163, 163, 163);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-left: 10px;
+    transition: color .3s;
+}
+
+.lateral-bar a:hover{
+
+    color: rgb(247, 247, 247);
+
+}
+
+button{
+    background-color: rgba(245, 245, 220, 0);
+    border: 0px;
+}
+
+.logo{
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    left: 0;
+    margin-left: 10px;
+}
+
+.acnt{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    width: 340px;
+    margin-right: 0px;
+    background-color: rgba(180, 180, 180, 0);
+    align-items: center;
+}
+
+.item{
+    background-color: black;
+    width: 150px;
+    height: 50%;
+    margin-right: 20px;
+    border-radius: 7px;
+    border: 1px solid white;
+    text-justify: auto;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+}
+
+.inic{
+    background-color: #e23961;
+}
+
+.crea{
+    background-color: rgb(64, 64, 64);
+}
+
+.main{
+    display: flex;
+    background-color: rgb(15, 15, 15);
+    height: fit-content;
+    width: 1500px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post{
+    display: flex;
+    border: 1px solid rgb(22, 22, 22);
+    width: 500px;
+    height:fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.img-post{
+    border: 0px solid rgb(22, 22, 22);
+    width: 450px;
+    height: 450px;
+    margin-top: 20px;
+}
+
+.info-post{
+    display: flex;
+    border: 0px solid rgb(22, 22, 22);
+    width: 500px;
+    height: 80px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    color: rgb(223, 223, 223);
+    text-align: center;
+}
+
+.owner-post{
+    display: flex;
+    border: 0px solid rgb(22, 22, 22);
+    width: 500px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.owner{
+    border: 0px solid rgb(22, 22, 22);
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.o-img img{
+    border-radius: 50%;
+}
+
+.o-name{
+    width: auto;
+    padding-top: 19px;
+    margin-right: 10px;
+    color: #e23961;
+    font-weight: bold;
+}
+
+button .active{
+    background-color: #e23961;
+}
+
+.t-post{
+    width: auto;
+    padding-top: 19px;
+    margin-right: 10px;
+    color: rgb(149, 149, 149);
+    font-weight: 500;
+}
+
+p{
+    color: white;
+    font-weight: 500;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #090909;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3d131d;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e23961;
+  }
+
+@media(max-width: 1340px){
+    .lateral-bar{
+        width: 70px;
+    }
+}
+
+@media(max-width: 768px){
+    .acnt{
+        width: 200px;
+    }
+    .ses{
+        font-size: 10px;
+    }
+    .lateral-bar{
+        display: none;
+    }
+}
+
+@media(min-width: 767px){
+    .bottom-bar{
+        display: none;
+    }
+}
+
+
+
+@media(max-width:550px){
+    .post{
+        width: 400px;
+    }
+    
+    .img-post{
+        width: 350px;
+    }
+    
+    .info-post{
+        width: 400px;
+    }
+    
+    .owner-post{
+        width: 400px;
+    }
+    
+}
+.index-link{
+    text-decoration: none;
+    color: white;
+}
+

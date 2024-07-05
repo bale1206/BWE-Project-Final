@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/usr">
+        {% csrf_token %}
+        <div>
+            <br>
+            <p>
+                <h3>Enter Details</h3>
+            </p>
+            <div>
+                <p>User ID:</p>{{ form.uid }}
+            </div>
+            <div>
+                <p>User Name:</p>{{ form.uname }}
+            </div>
+            <div>
+                <p>User Email:</p>{{ form.email }}
+            </div>
+            <div>
+                <p>User Contact:</p>{{ form.ucontact }}
+            </div>
+            <div>
+                <br>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

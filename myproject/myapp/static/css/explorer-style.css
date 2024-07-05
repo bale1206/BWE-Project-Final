@@ -1,0 +1,106 @@
+.top-detail{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: #e23961;
+    margin-top: 80px;
+}
+
+.head-page{
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    height: 500px;
+    background-color: rgb(10, 10, 10);
+    background-image: url("../assets/bg.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.artist-list{
+    display: flex;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.artist-item{
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(29, 29, 29);
+    margin-top: 10px;
+}
+
+.artist-img{
+    width: 250px;
+    height: 250px;
+}
+
+.artist-page{
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    font-weight: 400;
+    font-size: 1rem;
+    text-align:right;
+    justify-content: center;
+    text-justify: center;
+}
+
+p{
+    font-size: 1.2rem;
+    text-justify: center;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+label{
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+input{
+    height: 45px;
+    width: 500px;
+    background-color: rgb(5, 5, 5);
+    color: white;
+    border: 0px;
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.see-more{
+    background-color: #e23961;
+    color:white;
+    font-size: .9rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+@media(max-width: 768px){
+    input{
+        width: 300px;  
+    }
+
+    .artist-item{
+        width: 200px;
+        height: 200px;
+    }
+    .artist-img{
+        width: 200px;
+        height: 200px;
+    }
+       
+}
