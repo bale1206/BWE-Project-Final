@@ -12,7 +12,7 @@ urlpatterns = [
     path('show', views.show, name='show'),
     path('edit/<int:id>', views.edit, name='edit'),
     path('update/<int:id>', views.update, name='update'),
-    path('destroy/<int:id>', views.destroy, name='destroy'),
+    path('delete/<int:id>', views.destroy, name='destroy'),
     path('usr', views.usr, name='usr'), #ingresar al crud de la pagina usando /usr
 ]
 
