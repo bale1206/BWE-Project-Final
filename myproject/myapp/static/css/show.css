@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+table{
+    color: white;
+    margin-top: 10%;
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+
+button{
+    color: #fff;
+    background: #e23961;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline-block; /* Ensure the button fits the text width */
+    padding: 10px 20px; /* Add padding for better appearance */
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+button a{
+    color: inherit; /* Inherit color from button */
+    text-decoration: none; /* Remove underline from the link */
+    display: flex;
+    width: 100%;
+    height: -200%;
+    text-align: center;
+}
+
+table th{
+    color: white;
+    border: 1px solid white;
+    
+}
+
+table td{
+    color: white;
+    border: 1px solid white;
+}
